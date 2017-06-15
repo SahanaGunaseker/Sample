@@ -10,6 +10,7 @@ namespace Sample.Controllers
     public class ValuesController : Controller
     {
         string st = "Hello World";
+        
 
         // GET api/values
         [HttpGet]
