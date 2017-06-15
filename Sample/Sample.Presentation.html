@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script scr =" Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:53452/api/values',
+                dataType: 'json',
+                success: function (data) {
+                    $.each(data, function (index, val) {
+                       
+                        return val;
+                    });
+                }
+            });
+            
+        }          
+    </script>
+    
+</head>
+<body>
+</body>
+</html>
